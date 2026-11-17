@@ -1,0 +1,78 @@
+************************************************************************
+* auCdl Netlist:
+*
+* Library Name:  la5_lab
+* Top Cell Name: la_core_candidate_r5_nf44_20261013_060727
+* View Name:     schematic
+* Netlisted on:  Oct 13 10:48:19 2026
+************************************************************************
+
+.INCLUDE  @pdk_28nm_root@/Calibre/lvs/source.added
+*.BIPOLAR
+*.RESI = 0
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: la5_lab
+* Cell Name:    la_core_candidate_r5_nf44_20261013_060727
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT la_core_candidate_r5_nf44_20261013_060727 VSS inn inp outn outp vdd
+*.PININFO inn:I inp:I outn:O outp:O VSS:B vdd:B
+MMN11 outn n10 VSS VSS nmos_lvt l=30n w=1u m=44 nf=1
+MMP11 outp p10 VSS VSS nmos_lvt l=30n w=1u m=44 nf=1
+MMN10 n10 n9 VSS VSS nmos_lvt l=30n w=1u m=44 nf=1
+MMP10 p10 p9 VSS VSS nmos_lvt l=30n w=1u m=44 nf=1
+MMN9 n9 n8 VSS VSS nmos_lvt l=30n w=1u m=44 nf=1
+MMP9 p9 p8 VSS VSS nmos_lvt l=30n w=1u m=44 nf=1
+MMN8 n8 n7 VSS VSS nmos_lvt l=30n w=1u m=44 nf=1
+MMP8 p8 p7 VSS VSS nmos_lvt l=30n w=1u m=44 nf=1
+MMN7 n7 n6 VSS VSS nmos_lvt l=30n w=1u m=44 nf=1
+MMP7 p7 p6 VSS VSS nmos_lvt l=30n w=1u m=44 nf=1
+MMN6 n6 n5 VSS VSS nmos_lvt l=30n w=1u m=44 nf=1
+MMP6 p6 p5 VSS VSS nmos_lvt l=30n w=1u m=44 nf=1
+MMN5 n5 n4 VSS VSS nmos_lvt l=30n w=1u m=44 nf=1
+MMP5 p5 p4 VSS VSS nmos_lvt l=30n w=1u m=44 nf=1
+MMN4 n4 n3 VSS VSS nmos_lvt l=30n w=1u m=44 nf=1
+MMP4 p4 p3 VSS VSS nmos_lvt l=30n w=1u m=44 nf=1
+MMN3 n3 n2 VSS VSS nmos_lvt l=30n w=1u m=44 nf=1
+MMP3 p3 p2 VSS VSS nmos_lvt l=30n w=1u m=44 nf=1
+MMN2 n2 n1 VSS VSS nmos_lvt l=30n w=1u m=44 nf=1
+MMP2 p2 p1 VSS VSS nmos_lvt l=30n w=1u m=44 nf=1
+MMN1 n1 inn VSS VSS nmos_lvt l=30n w=1u m=44 nf=1
+MMP1 p1 inp VSS VSS nmos_lvt l=30n w=1u m=44 nf=1
+XRFBN outn inn rupolym l=3.3943m w=400n m=1
+XRFBP outp inp rupolym l=3.3943m w=400n m=1
+XRN11 vdd outn rupolym l=1.035u w=12.0u m=1
+XRP11 vdd outp rupolym l=1.035u w=12.0u m=1
+XRN10 vdd n10 rupolym l=1.035u w=12.0u m=1
+XRP10 vdd p10 rupolym l=1.035u w=12.0u m=1
+XRN9 vdd n9 rupolym l=1.035u w=12.0u m=1
+XRP9 vdd p9 rupolym l=1.035u w=12.0u m=1
+XRN8 vdd n8 rupolym l=1.035u w=12.0u m=1
+XRP8 vdd p8 rupolym l=1.035u w=12.0u m=1
+XRN7 vdd n7 rupolym l=1.035u w=12.0u m=1
+XRP7 vdd p7 rupolym l=1.035u w=12.0u m=1
+XRN6 vdd n6 rupolym l=1.035u w=12.0u m=1
+XRP6 vdd p6 rupolym l=1.035u w=12.0u m=1
+XRN5 vdd n5 rupolym l=1.035u w=12.0u m=1
+XRP5 vdd p5 rupolym l=1.035u w=12.0u m=1
+XRN4 vdd n4 rupolym l=1.035u w=12.0u m=1
+XRP4 vdd p4 rupolym l=1.035u w=12.0u m=1
+XRN3 vdd n3 rupolym l=1.035u w=12.0u m=1
+XRP3 vdd p3 rupolym l=1.035u w=12.0u m=1
+XRN2 vdd n2 rupolym l=1.035u w=12.0u m=1
+XRP2 vdd p2 rupolym l=1.035u w=12.0u m=1
+XRN1 vdd n1 rupolym l=1.035u w=12.0u m=1
+XRP1 vdd p1 rupolym l=1.035u w=12.0u m=1
+.ENDS

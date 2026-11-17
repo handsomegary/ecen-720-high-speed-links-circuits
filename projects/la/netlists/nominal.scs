@@ -1,0 +1,378 @@
+simulator lang=spectre
+global 0
+include "__pdk_root__/models/spectre/toplevel.scs" section=tt
+VDD (vdd 0) vsource dc=0.9
+VCM (vcm 0) vsource dc=0.8175
+VIN (stim 0) vsource dc=0 mag=1
+EP (drivep vcm stim 0) vcvs gain=0.5
+EN (driven vcm stim 0) vcvs gain=-0.5
+CINP (srcp inp) capacitor c=2e-10
+CINN (srcn inn) capacitor c=2e-10
+RFBP_1 (outp RFBP_n1) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_2 (RFBP_n1 RFBP_n2) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_3 (RFBP_n2 RFBP_n3) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_4 (RFBP_n3 RFBP_n4) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_5 (RFBP_n4 RFBP_n5) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_6 (RFBP_n5 RFBP_n6) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_7 (RFBP_n6 RFBP_n7) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_8 (RFBP_n7 RFBP_n8) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_9 (RFBP_n8 RFBP_n9) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_10 (RFBP_n9 RFBP_n10) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_11 (RFBP_n10 RFBP_n11) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_12 (RFBP_n11 RFBP_n12) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_13 (RFBP_n12 RFBP_n13) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_14 (RFBP_n13 RFBP_n14) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_15 (RFBP_n14 RFBP_n15) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_16 (RFBP_n15 RFBP_n16) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_17 (RFBP_n16 RFBP_n17) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_18 (RFBP_n17 RFBP_n18) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_19 (RFBP_n18 RFBP_n19) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_20 (RFBP_n19 RFBP_n20) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_21 (RFBP_n20 RFBP_n21) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_22 (RFBP_n21 RFBP_n22) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_23 (RFBP_n22 RFBP_n23) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_24 (RFBP_n23 RFBP_n24) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_25 (RFBP_n24 RFBP_n25) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_26 (RFBP_n25 RFBP_n26) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_27 (RFBP_n26 RFBP_n27) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_28 (RFBP_n27 RFBP_n28) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_29 (RFBP_n28 RFBP_n29) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_30 (RFBP_n29 RFBP_n30) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_31 (RFBP_n30 RFBP_n31) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_32 (RFBP_n31 RFBP_n32) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_33 (RFBP_n32 RFBP_n33) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_34 (RFBP_n33 RFBP_n34) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_35 (RFBP_n34 RFBP_n35) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_36 (RFBP_n35 RFBP_n36) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_37 (RFBP_n36 RFBP_n37) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_38 (RFBP_n37 RFBP_n38) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_39 (RFBP_n38 RFBP_n39) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_40 (RFBP_n39 RFBP_n40) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_41 (RFBP_n40 RFBP_n41) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_42 (RFBP_n41 RFBP_n42) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_43 (RFBP_n42 RFBP_n43) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_44 (RFBP_n43 RFBP_n44) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_45 (RFBP_n44 RFBP_n45) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_46 (RFBP_n45 RFBP_n46) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_47 (RFBP_n46 RFBP_n47) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_48 (RFBP_n47 RFBP_n48) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_49 (RFBP_n48 RFBP_n49) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_50 (RFBP_n49 RFBP_n50) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_51 (RFBP_n50 RFBP_n51) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_52 (RFBP_n51 RFBP_n52) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_53 (RFBP_n52 RFBP_n53) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_54 (RFBP_n53 RFBP_n54) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_55 (RFBP_n54 RFBP_n55) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_56 (RFBP_n55 RFBP_n56) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_57 (RFBP_n56 RFBP_n57) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_58 (RFBP_n57 RFBP_n58) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_59 (RFBP_n58 RFBP_n59) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_60 (RFBP_n59 RFBP_n60) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_61 (RFBP_n60 RFBP_n61) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_62 (RFBP_n61 RFBP_n62) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_63 (RFBP_n62 RFBP_n63) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_64 (RFBP_n63 RFBP_n64) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_65 (RFBP_n64 RFBP_n65) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_66 (RFBP_n65 RFBP_n66) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_67 (RFBP_n66 RFBP_n67) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_68 (RFBP_n67 RFBP_n68) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_69 (RFBP_n68 RFBP_n69) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_70 (RFBP_n69 RFBP_n70) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_71 (RFBP_n70 RFBP_n71) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_72 (RFBP_n71 RFBP_n72) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_73 (RFBP_n72 RFBP_n73) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_74 (RFBP_n73 RFBP_n74) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_75 (RFBP_n74 RFBP_n75) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_76 (RFBP_n75 RFBP_n76) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_77 (RFBP_n76 RFBP_n77) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_78 (RFBP_n77 RFBP_n78) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_79 (RFBP_n78 RFBP_n79) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_80 (RFBP_n79 RFBP_n80) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_81 (RFBP_n80 RFBP_n81) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_82 (RFBP_n81 RFBP_n82) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_83 (RFBP_n82 RFBP_n83) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_84 (RFBP_n83 RFBP_n84) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_85 (RFBP_n84 RFBP_n85) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_86 (RFBP_n85 RFBP_n86) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_87 (RFBP_n86 RFBP_n87) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_88 (RFBP_n87 RFBP_n88) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_89 (RFBP_n88 RFBP_n89) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_90 (RFBP_n89 RFBP_n90) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_91 (RFBP_n90 RFBP_n91) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_92 (RFBP_n91 RFBP_n92) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_93 (RFBP_n92 RFBP_n93) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_94 (RFBP_n93 RFBP_n94) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_95 (RFBP_n94 RFBP_n95) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_96 (RFBP_n95 RFBP_n96) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_97 (RFBP_n96 RFBP_n97) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_98 (RFBP_n97 RFBP_n98) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_99 (RFBP_n98 RFBP_n99) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_100 (RFBP_n99 RFBP_n100) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_101 (RFBP_n100 RFBP_n101) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_102 (RFBP_n101 RFBP_n102) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_103 (RFBP_n102 RFBP_n103) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_104 (RFBP_n103 RFBP_n104) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_105 (RFBP_n104 RFBP_n105) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_106 (RFBP_n105 RFBP_n106) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_107 (RFBP_n106 RFBP_n107) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_108 (RFBP_n107 RFBP_n108) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_109 (RFBP_n108 RFBP_n109) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_110 (RFBP_n109 RFBP_n110) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_111 (RFBP_n110 RFBP_n111) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_112 (RFBP_n111 RFBP_n112) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_113 (RFBP_n112 RFBP_n113) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_114 (RFBP_n113 RFBP_n114) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_115 (RFBP_n114 RFBP_n115) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_116 (RFBP_n115 RFBP_n116) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_117 (RFBP_n116 RFBP_n117) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_118 (RFBP_n117 RFBP_n118) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_119 (RFBP_n118 RFBP_n119) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_120 (RFBP_n119 RFBP_n120) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_121 (RFBP_n120 RFBP_n121) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_122 (RFBP_n121 RFBP_n122) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_123 (RFBP_n122 RFBP_n123) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_124 (RFBP_n123 RFBP_n124) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_125 (RFBP_n124 RFBP_n125) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_126 (RFBP_n125 RFBP_n126) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_127 (RFBP_n126 RFBP_n127) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_128 (RFBP_n127 RFBP_n128) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_129 (RFBP_n128 RFBP_n129) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_130 (RFBP_n129 RFBP_n130) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_131 (RFBP_n130 RFBP_n131) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_132 (RFBP_n131 RFBP_n132) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_133 (RFBP_n132 RFBP_n133) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_134 (RFBP_n133 RFBP_n134) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_135 (RFBP_n134 RFBP_n135) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_136 (RFBP_n135 RFBP_n136) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_137 (RFBP_n136 RFBP_n137) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_138 (RFBP_n137 RFBP_n138) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_139 (RFBP_n138 RFBP_n139) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBP_140 (RFBP_n139 inp) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_1 (outn RFBN_n1) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_2 (RFBN_n1 RFBN_n2) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_3 (RFBN_n2 RFBN_n3) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_4 (RFBN_n3 RFBN_n4) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_5 (RFBN_n4 RFBN_n5) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_6 (RFBN_n5 RFBN_n6) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_7 (RFBN_n6 RFBN_n7) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_8 (RFBN_n7 RFBN_n8) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_9 (RFBN_n8 RFBN_n9) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_10 (RFBN_n9 RFBN_n10) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_11 (RFBN_n10 RFBN_n11) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_12 (RFBN_n11 RFBN_n12) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_13 (RFBN_n12 RFBN_n13) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_14 (RFBN_n13 RFBN_n14) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_15 (RFBN_n14 RFBN_n15) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_16 (RFBN_n15 RFBN_n16) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_17 (RFBN_n16 RFBN_n17) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_18 (RFBN_n17 RFBN_n18) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_19 (RFBN_n18 RFBN_n19) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_20 (RFBN_n19 RFBN_n20) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_21 (RFBN_n20 RFBN_n21) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_22 (RFBN_n21 RFBN_n22) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_23 (RFBN_n22 RFBN_n23) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_24 (RFBN_n23 RFBN_n24) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_25 (RFBN_n24 RFBN_n25) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_26 (RFBN_n25 RFBN_n26) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_27 (RFBN_n26 RFBN_n27) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_28 (RFBN_n27 RFBN_n28) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_29 (RFBN_n28 RFBN_n29) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_30 (RFBN_n29 RFBN_n30) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_31 (RFBN_n30 RFBN_n31) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_32 (RFBN_n31 RFBN_n32) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_33 (RFBN_n32 RFBN_n33) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_34 (RFBN_n33 RFBN_n34) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_35 (RFBN_n34 RFBN_n35) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_36 (RFBN_n35 RFBN_n36) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_37 (RFBN_n36 RFBN_n37) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_38 (RFBN_n37 RFBN_n38) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_39 (RFBN_n38 RFBN_n39) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_40 (RFBN_n39 RFBN_n40) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_41 (RFBN_n40 RFBN_n41) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_42 (RFBN_n41 RFBN_n42) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_43 (RFBN_n42 RFBN_n43) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_44 (RFBN_n43 RFBN_n44) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_45 (RFBN_n44 RFBN_n45) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_46 (RFBN_n45 RFBN_n46) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_47 (RFBN_n46 RFBN_n47) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_48 (RFBN_n47 RFBN_n48) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_49 (RFBN_n48 RFBN_n49) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_50 (RFBN_n49 RFBN_n50) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_51 (RFBN_n50 RFBN_n51) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_52 (RFBN_n51 RFBN_n52) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_53 (RFBN_n52 RFBN_n53) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_54 (RFBN_n53 RFBN_n54) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_55 (RFBN_n54 RFBN_n55) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_56 (RFBN_n55 RFBN_n56) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_57 (RFBN_n56 RFBN_n57) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_58 (RFBN_n57 RFBN_n58) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_59 (RFBN_n58 RFBN_n59) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_60 (RFBN_n59 RFBN_n60) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_61 (RFBN_n60 RFBN_n61) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_62 (RFBN_n61 RFBN_n62) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_63 (RFBN_n62 RFBN_n63) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_64 (RFBN_n63 RFBN_n64) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_65 (RFBN_n64 RFBN_n65) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_66 (RFBN_n65 RFBN_n66) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_67 (RFBN_n66 RFBN_n67) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_68 (RFBN_n67 RFBN_n68) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_69 (RFBN_n68 RFBN_n69) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_70 (RFBN_n69 RFBN_n70) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_71 (RFBN_n70 RFBN_n71) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_72 (RFBN_n71 RFBN_n72) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_73 (RFBN_n72 RFBN_n73) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_74 (RFBN_n73 RFBN_n74) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_75 (RFBN_n74 RFBN_n75) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_76 (RFBN_n75 RFBN_n76) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_77 (RFBN_n76 RFBN_n77) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_78 (RFBN_n77 RFBN_n78) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_79 (RFBN_n78 RFBN_n79) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_80 (RFBN_n79 RFBN_n80) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_81 (RFBN_n80 RFBN_n81) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_82 (RFBN_n81 RFBN_n82) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_83 (RFBN_n82 RFBN_n83) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_84 (RFBN_n83 RFBN_n84) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_85 (RFBN_n84 RFBN_n85) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_86 (RFBN_n85 RFBN_n86) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_87 (RFBN_n86 RFBN_n87) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_88 (RFBN_n87 RFBN_n88) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_89 (RFBN_n88 RFBN_n89) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_90 (RFBN_n89 RFBN_n90) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_91 (RFBN_n90 RFBN_n91) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_92 (RFBN_n91 RFBN_n92) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_93 (RFBN_n92 RFBN_n93) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_94 (RFBN_n93 RFBN_n94) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_95 (RFBN_n94 RFBN_n95) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_96 (RFBN_n95 RFBN_n96) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_97 (RFBN_n96 RFBN_n97) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_98 (RFBN_n97 RFBN_n98) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_99 (RFBN_n98 RFBN_n99) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_100 (RFBN_n99 RFBN_n100) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_101 (RFBN_n100 RFBN_n101) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_102 (RFBN_n101 RFBN_n102) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_103 (RFBN_n102 RFBN_n103) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_104 (RFBN_n103 RFBN_n104) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_105 (RFBN_n104 RFBN_n105) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_106 (RFBN_n105 RFBN_n106) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_107 (RFBN_n106 RFBN_n107) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_108 (RFBN_n107 RFBN_n108) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_109 (RFBN_n108 RFBN_n109) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_110 (RFBN_n109 RFBN_n110) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_111 (RFBN_n110 RFBN_n111) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_112 (RFBN_n111 RFBN_n112) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_113 (RFBN_n112 RFBN_n113) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_114 (RFBN_n113 RFBN_n114) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_115 (RFBN_n114 RFBN_n115) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_116 (RFBN_n115 RFBN_n116) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_117 (RFBN_n116 RFBN_n117) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_118 (RFBN_n117 RFBN_n118) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_119 (RFBN_n118 RFBN_n119) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_120 (RFBN_n119 RFBN_n120) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_121 (RFBN_n120 RFBN_n121) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_122 (RFBN_n121 RFBN_n122) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_123 (RFBN_n122 RFBN_n123) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_124 (RFBN_n123 RFBN_n124) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_125 (RFBN_n124 RFBN_n125) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_126 (RFBN_n125 RFBN_n126) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_127 (RFBN_n126 RFBN_n127) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_128 (RFBN_n127 RFBN_n128) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_129 (RFBN_n128 RFBN_n129) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_130 (RFBN_n129 RFBN_n130) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_131 (RFBN_n130 RFBN_n131) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_132 (RFBN_n131 RFBN_n132) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_133 (RFBN_n132 RFBN_n133) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_134 (RFBN_n133 RFBN_n134) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_135 (RFBN_n134 RFBN_n135) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_136 (RFBN_n135 RFBN_n136) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_137 (RFBN_n136 RFBN_n137) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_138 (RFBN_n137 RFBN_n138) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_139 (RFBN_n138 RFBN_n139) rupolym l=24.245u m=1 multi=(1) w=400n
+RFBN_140 (RFBN_n139 inn) rupolym l=24.245u m=1 multi=(1) w=400n
+RP1 (vdd p1) rupolym l=1.035u m=1 multi=(12) w=1u
+RN1 (vdd n1) rupolym l=1.035u m=1 multi=(12) w=1u
+MP1 (p1 inp t1 0) nmos_lvt ad=2.2e-12 as=2.3e-12 dfm_flag=0 l=30n multi=1 nf=22 nrd=0.011382 nrs=0.011382 pd=46.2u ps=50.3u sa=643.706n sa1=210.303n sa2=511.326n sa3=833.254n sa4=608.757n sap=184.054n sapb=192.548n sb=643.706n sb1=210.303n sb2=511.326n sb3=833.254n sd=100n spa=100n spa1=100n spa2=100n spa3=100n spba=115.715n spba1=117.043n spmb=1.11111e+15 spmt=1.11111e+15 spomb=0 spomb1=1.11111e+60 spomt=0 spomt1=1.11111e+60 w=44.0u
+MN1 (n1 inn t1 0) nmos_lvt ad=2.2e-12 as=2.3e-12 dfm_flag=0 l=30n multi=1 nf=22 nrd=0.011382 nrs=0.011382 pd=46.2u ps=50.3u sa=643.706n sa1=210.303n sa2=511.326n sa3=833.254n sa4=608.757n sap=184.054n sapb=192.548n sb=643.706n sb1=210.303n sb2=511.326n sb3=833.254n sd=100n spa=100n spa1=100n spa2=100n spa3=100n spba=115.715n spba1=117.043n spmb=1.11111e+15 spmt=1.11111e+15 spomb=0 spomb1=1.11111e+60 spomt=0 spomt1=1.11111e+60 w=44.0u
+RT1 (t1 0) rm1w l=4.28u multi=(1) w=2u
+CP1 (p1 0) capacitor c=2e-14
+CN1 (n1 0) capacitor c=2e-14
+RP2 (vdd p2) rupolym l=1.035u m=1 multi=(12) w=1u
+RN2 (vdd n2) rupolym l=1.035u m=1 multi=(12) w=1u
+MP2 (p2 p1 t2 0) nmos_lvt ad=2.2e-12 as=2.3e-12 dfm_flag=0 l=30n multi=1 nf=22 nrd=0.011382 nrs=0.011382 pd=46.2u ps=50.3u sa=643.706n sa1=210.303n sa2=511.326n sa3=833.254n sa4=608.757n sap=184.054n sapb=192.548n sb=643.706n sb1=210.303n sb2=511.326n sb3=833.254n sd=100n spa=100n spa1=100n spa2=100n spa3=100n spba=115.715n spba1=117.043n spmb=1.11111e+15 spmt=1.11111e+15 spomb=0 spomb1=1.11111e+60 spomt=0 spomt1=1.11111e+60 w=44.0u
+MN2 (n2 n1 t2 0) nmos_lvt ad=2.2e-12 as=2.3e-12 dfm_flag=0 l=30n multi=1 nf=22 nrd=0.011382 nrs=0.011382 pd=46.2u ps=50.3u sa=643.706n sa1=210.303n sa2=511.326n sa3=833.254n sa4=608.757n sap=184.054n sapb=192.548n sb=643.706n sb1=210.303n sb2=511.326n sb3=833.254n sd=100n spa=100n spa1=100n spa2=100n spa3=100n spba=115.715n spba1=117.043n spmb=1.11111e+15 spmt=1.11111e+15 spomb=0 spomb1=1.11111e+60 spomt=0 spomt1=1.11111e+60 w=44.0u
+RT2 (t2 0) rm1w l=4.28u multi=(1) w=2u
+CP2 (p2 0) capacitor c=2e-14
+CN2 (n2 0) capacitor c=2e-14
+RP3 (vdd p3) rupolym l=1.035u m=1 multi=(12) w=1u
+RN3 (vdd n3) rupolym l=1.035u m=1 multi=(12) w=1u
+MP3 (p3 p2 t3 0) nmos_lvt ad=2.2e-12 as=2.3e-12 dfm_flag=0 l=30n multi=1 nf=22 nrd=0.011382 nrs=0.011382 pd=46.2u ps=50.3u sa=643.706n sa1=210.303n sa2=511.326n sa3=833.254n sa4=608.757n sap=184.054n sapb=192.548n sb=643.706n sb1=210.303n sb2=511.326n sb3=833.254n sd=100n spa=100n spa1=100n spa2=100n spa3=100n spba=115.715n spba1=117.043n spmb=1.11111e+15 spmt=1.11111e+15 spomb=0 spomb1=1.11111e+60 spomt=0 spomt1=1.11111e+60 w=44.0u
+MN3 (n3 n2 t3 0) nmos_lvt ad=2.2e-12 as=2.3e-12 dfm_flag=0 l=30n multi=1 nf=22 nrd=0.011382 nrs=0.011382 pd=46.2u ps=50.3u sa=643.706n sa1=210.303n sa2=511.326n sa3=833.254n sa4=608.757n sap=184.054n sapb=192.548n sb=643.706n sb1=210.303n sb2=511.326n sb3=833.254n sd=100n spa=100n spa1=100n spa2=100n spa3=100n spba=115.715n spba1=117.043n spmb=1.11111e+15 spmt=1.11111e+15 spomb=0 spomb1=1.11111e+60 spomt=0 spomt1=1.11111e+60 w=44.0u
+RT3 (t3 0) rm1w l=4.28u multi=(1) w=2u
+CP3 (p3 0) capacitor c=2e-14
+CN3 (n3 0) capacitor c=2e-14
+RP4 (vdd p4) rupolym l=1.035u m=1 multi=(12) w=1u
+RN4 (vdd n4) rupolym l=1.035u m=1 multi=(12) w=1u
+MP4 (p4 p3 t4 0) nmos_lvt ad=2.2e-12 as=2.3e-12 dfm_flag=0 l=30n multi=1 nf=22 nrd=0.011382 nrs=0.011382 pd=46.2u ps=50.3u sa=643.706n sa1=210.303n sa2=511.326n sa3=833.254n sa4=608.757n sap=184.054n sapb=192.548n sb=643.706n sb1=210.303n sb2=511.326n sb3=833.254n sd=100n spa=100n spa1=100n spa2=100n spa3=100n spba=115.715n spba1=117.043n spmb=1.11111e+15 spmt=1.11111e+15 spomb=0 spomb1=1.11111e+60 spomt=0 spomt1=1.11111e+60 w=44.0u
+MN4 (n4 n3 t4 0) nmos_lvt ad=2.2e-12 as=2.3e-12 dfm_flag=0 l=30n multi=1 nf=22 nrd=0.011382 nrs=0.011382 pd=46.2u ps=50.3u sa=643.706n sa1=210.303n sa2=511.326n sa3=833.254n sa4=608.757n sap=184.054n sapb=192.548n sb=643.706n sb1=210.303n sb2=511.326n sb3=833.254n sd=100n spa=100n spa1=100n spa2=100n spa3=100n spba=115.715n spba1=117.043n spmb=1.11111e+15 spmt=1.11111e+15 spomb=0 spomb1=1.11111e+60 spomt=0 spomt1=1.11111e+60 w=44.0u
+RT4 (t4 0) rm1w l=4.28u multi=(1) w=2u
+CP4 (p4 0) capacitor c=2e-14
+CN4 (n4 0) capacitor c=2e-14
+RP5 (vdd p5) rupolym l=1.035u m=1 multi=(12) w=1u
+RN5 (vdd n5) rupolym l=1.035u m=1 multi=(12) w=1u
+MP5 (p5 p4 t5 0) nmos_lvt ad=2.2e-12 as=2.3e-12 dfm_flag=0 l=30n multi=1 nf=22 nrd=0.011382 nrs=0.011382 pd=46.2u ps=50.3u sa=643.706n sa1=210.303n sa2=511.326n sa3=833.254n sa4=608.757n sap=184.054n sapb=192.548n sb=643.706n sb1=210.303n sb2=511.326n sb3=833.254n sd=100n spa=100n spa1=100n spa2=100n spa3=100n spba=115.715n spba1=117.043n spmb=1.11111e+15 spmt=1.11111e+15 spomb=0 spomb1=1.11111e+60 spomt=0 spomt1=1.11111e+60 w=44.0u
+MN5 (n5 n4 t5 0) nmos_lvt ad=2.2e-12 as=2.3e-12 dfm_flag=0 l=30n multi=1 nf=22 nrd=0.011382 nrs=0.011382 pd=46.2u ps=50.3u sa=643.706n sa1=210.303n sa2=511.326n sa3=833.254n sa4=608.757n sap=184.054n sapb=192.548n sb=643.706n sb1=210.303n sb2=511.326n sb3=833.254n sd=100n spa=100n spa1=100n spa2=100n spa3=100n spba=115.715n spba1=117.043n spmb=1.11111e+15 spmt=1.11111e+15 spomb=0 spomb1=1.11111e+60 spomt=0 spomt1=1.11111e+60 w=44.0u
+RT5 (t5 0) rm1w l=4.28u multi=(1) w=2u
+CP5 (p5 0) capacitor c=2e-14
+CN5 (n5 0) capacitor c=2e-14
+RP6 (vdd p6) rupolym l=1.035u m=1 multi=(12) w=1u
+RN6 (vdd n6) rupolym l=1.035u m=1 multi=(12) w=1u
+MP6 (p6 p5 t6 0) nmos_lvt ad=2.2e-12 as=2.3e-12 dfm_flag=0 l=30n multi=1 nf=22 nrd=0.011382 nrs=0.011382 pd=46.2u ps=50.3u sa=643.706n sa1=210.303n sa2=511.326n sa3=833.254n sa4=608.757n sap=184.054n sapb=192.548n sb=643.706n sb1=210.303n sb2=511.326n sb3=833.254n sd=100n spa=100n spa1=100n spa2=100n spa3=100n spba=115.715n spba1=117.043n spmb=1.11111e+15 spmt=1.11111e+15 spomb=0 spomb1=1.11111e+60 spomt=0 spomt1=1.11111e+60 w=44.0u
+MN6 (n6 n5 t6 0) nmos_lvt ad=2.2e-12 as=2.3e-12 dfm_flag=0 l=30n multi=1 nf=22 nrd=0.011382 nrs=0.011382 pd=46.2u ps=50.3u sa=643.706n sa1=210.303n sa2=511.326n sa3=833.254n sa4=608.757n sap=184.054n sapb=192.548n sb=643.706n sb1=210.303n sb2=511.326n sb3=833.254n sd=100n spa=100n spa1=100n spa2=100n spa3=100n spba=115.715n spba1=117.043n spmb=1.11111e+15 spmt=1.11111e+15 spomb=0 spomb1=1.11111e+60 spomt=0 spomt1=1.11111e+60 w=44.0u
+RT6 (t6 0) rm1w l=4.28u multi=(1) w=2u
+CP6 (p6 0) capacitor c=2e-14
+CN6 (n6 0) capacitor c=2e-14
+RP7 (vdd p7) rupolym l=1.035u m=1 multi=(12) w=1u
+RN7 (vdd n7) rupolym l=1.035u m=1 multi=(12) w=1u
+MP7 (p7 p6 t7 0) nmos_lvt ad=2.2e-12 as=2.3e-12 dfm_flag=0 l=30n multi=1 nf=22 nrd=0.011382 nrs=0.011382 pd=46.2u ps=50.3u sa=643.706n sa1=210.303n sa2=511.326n sa3=833.254n sa4=608.757n sap=184.054n sapb=192.548n sb=643.706n sb1=210.303n sb2=511.326n sb3=833.254n sd=100n spa=100n spa1=100n spa2=100n spa3=100n spba=115.715n spba1=117.043n spmb=1.11111e+15 spmt=1.11111e+15 spomb=0 spomb1=1.11111e+60 spomt=0 spomt1=1.11111e+60 w=44.0u
+MN7 (n7 n6 t7 0) nmos_lvt ad=2.2e-12 as=2.3e-12 dfm_flag=0 l=30n multi=1 nf=22 nrd=0.011382 nrs=0.011382 pd=46.2u ps=50.3u sa=643.706n sa1=210.303n sa2=511.326n sa3=833.254n sa4=608.757n sap=184.054n sapb=192.548n sb=643.706n sb1=210.303n sb2=511.326n sb3=833.254n sd=100n spa=100n spa1=100n spa2=100n spa3=100n spba=115.715n spba1=117.043n spmb=1.11111e+15 spmt=1.11111e+15 spomb=0 spomb1=1.11111e+60 spomt=0 spomt1=1.11111e+60 w=44.0u
+RT7 (t7 0) rm1w l=4.28u multi=(1) w=2u
+CP7 (p7 0) capacitor c=2e-14
+CN7 (n7 0) capacitor c=2e-14
+RP8 (vdd p8) rupolym l=1.035u m=1 multi=(12) w=1u
+RN8 (vdd n8) rupolym l=1.035u m=1 multi=(12) w=1u
+MP8 (p8 p7 t8 0) nmos_lvt ad=2.2e-12 as=2.3e-12 dfm_flag=0 l=30n multi=1 nf=22 nrd=0.011382 nrs=0.011382 pd=46.2u ps=50.3u sa=643.706n sa1=210.303n sa2=511.326n sa3=833.254n sa4=608.757n sap=184.054n sapb=192.548n sb=643.706n sb1=210.303n sb2=511.326n sb3=833.254n sd=100n spa=100n spa1=100n spa2=100n spa3=100n spba=115.715n spba1=117.043n spmb=1.11111e+15 spmt=1.11111e+15 spomb=0 spomb1=1.11111e+60 spomt=0 spomt1=1.11111e+60 w=44.0u
+MN8 (n8 n7 t8 0) nmos_lvt ad=2.2e-12 as=2.3e-12 dfm_flag=0 l=30n multi=1 nf=22 nrd=0.011382 nrs=0.011382 pd=46.2u ps=50.3u sa=643.706n sa1=210.303n sa2=511.326n sa3=833.254n sa4=608.757n sap=184.054n sapb=192.548n sb=643.706n sb1=210.303n sb2=511.326n sb3=833.254n sd=100n spa=100n spa1=100n spa2=100n spa3=100n spba=115.715n spba1=117.043n spmb=1.11111e+15 spmt=1.11111e+15 spomb=0 spomb1=1.11111e+60 spomt=0 spomt1=1.11111e+60 w=44.0u
+RT8 (t8 0) rm1w l=4.28u multi=(1) w=2u
+CP8 (p8 0) capacitor c=2e-14
+CN8 (n8 0) capacitor c=2e-14
+RP9 (vdd p9) rupolym l=1.035u m=1 multi=(12) w=1u
+RN9 (vdd n9) rupolym l=1.035u m=1 multi=(12) w=1u
+MP9 (p9 p8 t9 0) nmos_lvt ad=2.2e-12 as=2.3e-12 dfm_flag=0 l=30n multi=1 nf=22 nrd=0.011382 nrs=0.011382 pd=46.2u ps=50.3u sa=643.706n sa1=210.303n sa2=511.326n sa3=833.254n sa4=608.757n sap=184.054n sapb=192.548n sb=643.706n sb1=210.303n sb2=511.326n sb3=833.254n sd=100n spa=100n spa1=100n spa2=100n spa3=100n spba=115.715n spba1=117.043n spmb=1.11111e+15 spmt=1.11111e+15 spomb=0 spomb1=1.11111e+60 spomt=0 spomt1=1.11111e+60 w=44.0u
+MN9 (n9 n8 t9 0) nmos_lvt ad=2.2e-12 as=2.3e-12 dfm_flag=0 l=30n multi=1 nf=22 nrd=0.011382 nrs=0.011382 pd=46.2u ps=50.3u sa=643.706n sa1=210.303n sa2=511.326n sa3=833.254n sa4=608.757n sap=184.054n sapb=192.548n sb=643.706n sb1=210.303n sb2=511.326n sb3=833.254n sd=100n spa=100n spa1=100n spa2=100n spa3=100n spba=115.715n spba1=117.043n spmb=1.11111e+15 spmt=1.11111e+15 spomb=0 spomb1=1.11111e+60 spomt=0 spomt1=1.11111e+60 w=44.0u
+RT9 (t9 0) rm1w l=4.28u multi=(1) w=2u
+CP9 (p9 0) capacitor c=2e-14
+CN9 (n9 0) capacitor c=2e-14
+RP10 (vdd p10) rupolym l=1.035u m=1 multi=(12) w=1u
+RN10 (vdd n10) rupolym l=1.035u m=1 multi=(12) w=1u
+MP10 (p10 p9 t10 0) nmos_lvt ad=2.2e-12 as=2.3e-12 dfm_flag=0 l=30n multi=1 nf=22 nrd=0.011382 nrs=0.011382 pd=46.2u ps=50.3u sa=643.706n sa1=210.303n sa2=511.326n sa3=833.254n sa4=608.757n sap=184.054n sapb=192.548n sb=643.706n sb1=210.303n sb2=511.326n sb3=833.254n sd=100n spa=100n spa1=100n spa2=100n spa3=100n spba=115.715n spba1=117.043n spmb=1.11111e+15 spmt=1.11111e+15 spomb=0 spomb1=1.11111e+60 spomt=0 spomt1=1.11111e+60 w=44.0u
+MN10 (n10 n9 t10 0) nmos_lvt ad=2.2e-12 as=2.3e-12 dfm_flag=0 l=30n multi=1 nf=22 nrd=0.011382 nrs=0.011382 pd=46.2u ps=50.3u sa=643.706n sa1=210.303n sa2=511.326n sa3=833.254n sa4=608.757n sap=184.054n sapb=192.548n sb=643.706n sb1=210.303n sb2=511.326n sb3=833.254n sd=100n spa=100n spa1=100n spa2=100n spa3=100n spba=115.715n spba1=117.043n spmb=1.11111e+15 spmt=1.11111e+15 spomb=0 spomb1=1.11111e+60 spomt=0 spomt1=1.11111e+60 w=44.0u
+RT10 (t10 0) rm1w l=4.28u multi=(1) w=2u
+CP10 (p10 0) capacitor c=2e-14
+CN10 (n10 0) capacitor c=2e-14
+RP11 (vdd outp) rupolym l=1.035u m=1 multi=(12) w=1u
+RN11 (vdd outn) rupolym l=1.035u m=1 multi=(12) w=1u
+MP11 (outp p10 t11 0) nmos_lvt ad=2.2e-12 as=2.3e-12 dfm_flag=0 l=30n multi=1 nf=22 nrd=0.011382 nrs=0.011382 pd=46.2u ps=50.3u sa=643.706n sa1=210.303n sa2=511.326n sa3=833.254n sa4=608.757n sap=184.054n sapb=192.548n sb=643.706n sb1=210.303n sb2=511.326n sb3=833.254n sd=100n spa=100n spa1=100n spa2=100n spa3=100n spba=115.715n spba1=117.043n spmb=1.11111e+15 spmt=1.11111e+15 spomb=0 spomb1=1.11111e+60 spomt=0 spomt1=1.11111e+60 w=44.0u
+MN11 (outn n10 t11 0) nmos_lvt ad=2.2e-12 as=2.3e-12 dfm_flag=0 l=30n multi=1 nf=22 nrd=0.011382 nrs=0.011382 pd=46.2u ps=50.3u sa=643.706n sa1=210.303n sa2=511.326n sa3=833.254n sa4=608.757n sap=184.054n sapb=192.548n sb=643.706n sb1=210.303n sb2=511.326n sb3=833.254n sd=100n spa=100n spa1=100n spa2=100n spa3=100n spba=115.715n spba1=117.043n spmb=1.11111e+15 spmt=1.11111e+15 spomb=0 spomb1=1.11111e+60 spomt=0 spomt1=1.11111e+60 w=44.0u
+RT11 (t11 0) rm1w l=4.28u multi=(1) w=2u
+CP11 (outp 0) capacitor c=2e-14
+CN11 (outn 0) capacitor c=2e-14
+CLOADP (outp 0) capacitor c=2e-14
+CLOADN (outn 0) capacitor c=2e-14
+opts options temp=27 reltol=1e-5 vabstol=1e-8 iabstol=1e-12 gmin=1e-15
+saveOpt options save=selected currents=selected
+save outp outn inp inn srcp srcn stim vdd VDD:p p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 n1 n2 n3 n4 n5 n6 n7 n8 n9 n10 t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 t11
+dcOp dc write="spectre.dc"
+dcOpInfo info what=oppoint where=rawfile
+ac ac start=1k stop=200G dec=80
+noise (outp outn) noise start=1k stop=200G dec=80 iprobe=VIN
+RSP (drivep srcp) resistor r=25
+RSN (driven srcn) resistor r=25

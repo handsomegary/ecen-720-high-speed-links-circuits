@@ -1,0 +1,20 @@
+# Simulator outputs and local Cadence assets
+*.raw/
+raw/
+*.psf/
+psf/
+*.ahdlSimDB/
+*.log
+*.lck
+*.cdslck
+slurm-*.out
+slurm-*.err
+*.zip
+__pycache__/
+local_oa/
+olympus_workspace/
+la_long.*/
+runs/
+**/pdks/
+**/models/
+.env

@@ -1,0 +1,11 @@
+{
+  "kind": "LA",
+  "library_name": "la5_lab",
+  "library_path": "local_oa/la5_lab",
+  "cases": {
+    "nominal": {
+      "path": "netlists/nominal.scs",
+      "sha256": "dc50e829e4887e7ed5f2f33360e251cfa386a4ad0ef4c5624340abeb285c0844"
+    }
+  }
+}

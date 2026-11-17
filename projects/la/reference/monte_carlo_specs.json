@@ -1,0 +1,46 @@
+{
+  "scope": "LA pre-layout native Monte Carlo gain, bandwidth and input noise checks",
+  "qualification": "Finite sample sets; no manufacturing yield guarantee.",
+  "studies": {
+    "nominal": {
+      "criteria": {
+        "frequencywise_input_noise_band_hz": [
+          1000,
+          20000000000
+        ],
+        "gain_db_at_100mhz": ">50",
+        "input_noise_vrms": "<=0.0005",
+        "upper_3db_from_actual_peak_hz": ">1e10"
+      },
+      "completed_random_samples": 32,
+      "passing_samples": 32,
+      "worst_metrics": {
+        "maximum_frequencywise_input_noise_1k_20g_vrms": 0.0003513532024505367,
+        "minimum_gain_db": 67.86537009173945,
+        "minimum_peak_relative_upper_bw_hz": 11464630542.901106
+      },
+      "seed": 731202610,
+      "source_summary_sha256": "9bd247144cda77a23b30c59fc4cda9e6409804901e1cad7ab1445cc1f8261854"
+    },
+    "hotlow": {
+      "criteria": {
+        "frequencywise_input_noise_band_hz": [
+          1000,
+          20000000000
+        ],
+        "gain_db_at_100mhz": ">50",
+        "input_noise_vrms": "<=0.0005",
+        "upper_3db_from_actual_peak_hz": ">1e10"
+      },
+      "completed_random_samples": 32,
+      "passing_samples": 32,
+      "worst_metrics": {
+        "maximum_frequencywise_input_noise_1k_20g_vrms": 0.00037933262877298265,
+        "minimum_gain_db": 56.74156405844308,
+        "minimum_peak_relative_upper_bw_hz": 10578021473.137295
+      },
+      "seed": 7312027,
+      "source_summary_sha256": "647b74840a3437bbcd410e86258f7568bf1c7d0772143c422457a6d3986fdff6"
+    }
+  }
+}

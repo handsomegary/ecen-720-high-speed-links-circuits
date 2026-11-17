@@ -1,0 +1,302 @@
+{
+  "created_utc": "2026-10-17T21:42:07.308794Z",
+  "execute_requested": true,
+  "baseline_case": "@LA5_PROJECT_ROOT@/runs/r6-reduced-nominal-rmz2whud/study/fulltop",
+  "source_declaration": "@LA5_PROJECT_ROOT@/runs/r6-reduced-nominal-rmz2whud/study/variation_source_declaration.json",
+  "baseline_proof": {
+    "key": [
+      "TT",
+      0.9,
+      27
+    ],
+    "study": "C:\\Users\\User\\Documents\\Codex\\2026-10-04\\project-1-design-of-a-3\\outputs\\layout_r6\\full_top_v2_filled_ac_noise\\study",
+    "input_sha256": "3a17195c64fabc3a623946bf5035bc25186737e99bbd31bd9526391d43d98b48",
+    "source_files_sha256": {
+      "core.dist": "0ed28e4c914afcd6dd5042ede1ac49d32127cc7d6550f980fbedd3c2de132a97",
+      "core.dist.la_r6_full_fill_110822.pxi": "74f0eaec882b92b60fee158583554b450a480c2920a9f998cc58f78f2411854c",
+      "core.dist.pex": "f17c18f7862455f0e15b376abf9a68b85d2beb03a557304b27d18a3000634964"
+    },
+    "metrics_sha256": "3cab3398a7e61b25558a2f6363fa2ff80fd3f2c7e267f6ff051f6e82cffb751e",
+    "mode": "nominal",
+    "postprocessing_acceptance": {
+      "mode": "explicit_postprocess_only_recovery",
+      "recovery_receipt": {
+        "path": "C:\\Users\\User\\Documents\\Codex\\2026-10-04\\project-1-design-of-a-3\\outputs\\layout_r6\\full_top_v2_filled_ac_noise\\postprocess_recovery_receipt.json",
+        "sha256": "31be6d5b0c0f46ddbef6ad4b34121b884fa7b505fe6cdbd3c31905dae7266979"
+      },
+      "original_worker_state": "worker_failed",
+      "original_worker_exit_code": 1,
+      "original_worker_final_sha256": "1d9e4d42612f31ba16ae9236bdd73b80804b0d3de34badd1ab380140bddba244",
+      "native_relaunched": false,
+      "native_provenance_sha256": "991f444f1f6e9013416f51d76a13a8d909ba1569f218d83912cd6c46a716696e",
+      "recovered_metrics_sha256": "3cab3398a7e61b25558a2f6363fa2ff80fd3f2c7e267f6ff051f6e82cffb751e"
+    },
+    "memory_guard_exit_race_acceptance": null
+  },
+  "skipped_actual_proven_cases": [
+    {
+      "key": [
+        "SS",
+        0.81,
+        85
+      ],
+      "study": "C:\\Users\\User\\Documents\\Codex\\2026-10-04\\project-1-design-of-a-3\\outputs\\layout_r6\\filled_variation_20261017\\pvt_ss_v081_t85\\result\\study",
+      "input_sha256": "5637a49bcaacec6b45aa38a3a807be91a538fe704db9272d7ac606a287bd94ec",
+      "source_files_sha256": {
+        "core.dist": "0ed28e4c914afcd6dd5042ede1ac49d32127cc7d6550f980fbedd3c2de132a97",
+        "core.dist.la_r6_full_fill_110822.pxi": "74f0eaec882b92b60fee158583554b450a480c2920a9f998cc58f78f2411854c",
+        "core.dist.pex": "f17c18f7862455f0e15b376abf9a68b85d2beb03a557304b27d18a3000634964"
+      },
+      "metrics_sha256": "8637e1135c6397f388027f762ca2af87cefcc3a1fb6dd373b802eaa05d16d802",
+      "mode": "pvt",
+      "postprocessing_acceptance": null,
+      "memory_guard_exit_race_acceptance": null
+    },
+    {
+      "key": [
+        "FF",
+        0.81,
+        85
+      ],
+      "study": "C:\\Users\\User\\Documents\\Codex\\2026-10-04\\project-1-design-of-a-3\\outputs\\layout_r6\\filled_variation_20261017\\pvt_ff_v081_t85\\result\\study",
+      "input_sha256": "30fe9b5d91bf5585ed28b3ad46bb25d62811e1891164fdf141196ec37351375d",
+      "source_files_sha256": {
+        "core.dist": "0ed28e4c914afcd6dd5042ede1ac49d32127cc7d6550f980fbedd3c2de132a97",
+        "core.dist.la_r6_full_fill_110822.pxi": "74f0eaec882b92b60fee158583554b450a480c2920a9f998cc58f78f2411854c",
+        "core.dist.pex": "f17c18f7862455f0e15b376abf9a68b85d2beb03a557304b27d18a3000634964"
+      },
+      "metrics_sha256": "c5884470be2ee1528d3f3a7fde674abc053c6b5d4b0deb549c82da1991d28e8f",
+      "mode": "pvt",
+      "postprocessing_acceptance": null,
+      "memory_guard_exit_race_acceptance": null
+    },
+    {
+      "key": [
+        "TT",
+        0.81,
+        -40
+      ],
+      "study": "C:\\Users\\User\\Documents\\Codex\\2026-10-04\\project-1-design-of-a-3\\outputs\\layout_r6\\filled_variation_20261017\\pvt_tt_v081_tm40\\result\\study",
+      "input_sha256": "21326e1f455169f7f345aafa3f80b07a6f6a698150967ad5d53eaac40084e4a1",
+      "source_files_sha256": {
+        "core.dist": "0ed28e4c914afcd6dd5042ede1ac49d32127cc7d6550f980fbedd3c2de132a97",
+        "core.dist.la_r6_full_fill_110822.pxi": "74f0eaec882b92b60fee158583554b450a480c2920a9f998cc58f78f2411854c",
+        "core.dist.pex": "f17c18f7862455f0e15b376abf9a68b85d2beb03a557304b27d18a3000634964"
+      },
+      "metrics_sha256": "ce054926f1bcf6d9f337413b90caf7df18e1970f8997283fe67216cc76754348",
+      "mode": "pvt",
+      "postprocessing_acceptance": null,
+      "memory_guard_exit_race_acceptance": null
+    },
+    {
+      "key": [
+        "TT",
+        0.81,
+        27
+      ],
+      "study": "C:\\Users\\User\\Documents\\Codex\\2026-10-04\\project-1-design-of-a-3\\outputs\\layout_r6\\filled_variation_20261017\\pvt_tt_v081_t27\\result\\study",
+      "input_sha256": "b66170fdf8c0fa52d751c0fd1e668757767bebbb7404790f759180bd4c0729da",
+      "source_files_sha256": {
+        "core.dist": "0ed28e4c914afcd6dd5042ede1ac49d32127cc7d6550f980fbedd3c2de132a97",
+        "core.dist.la_r6_full_fill_110822.pxi": "74f0eaec882b92b60fee158583554b450a480c2920a9f998cc58f78f2411854c",
+        "core.dist.pex": "f17c18f7862455f0e15b376abf9a68b85d2beb03a557304b27d18a3000634964"
+      },
+      "metrics_sha256": "fee6cb9a4b922566c9284ed8446cf4130d803593368cf084693dbaa18169202a",
+      "mode": "pvt",
+      "postprocessing_acceptance": null,
+      "memory_guard_exit_race_acceptance": null
+    },
+    {
+      "key": [
+        "TT",
+        0.81,
+        85
+      ],
+      "study": "C:\\Users\\User\\Documents\\Codex\\2026-10-04\\project-1-design-of-a-3\\outputs\\layout_r6\\filled_variation_20261017\\pvt_tt_v081_t85\\result\\study",
+      "input_sha256": "9953457d6581794d4e38147997acdb69e44f879640b3165055ca10ce72d96892",
+      "source_files_sha256": {
+        "core.dist": "0ed28e4c914afcd6dd5042ede1ac49d32127cc7d6550f980fbedd3c2de132a97",
+        "core.dist.la_r6_full_fill_110822.pxi": "74f0eaec882b92b60fee158583554b450a480c2920a9f998cc58f78f2411854c",
+        "core.dist.pex": "f17c18f7862455f0e15b376abf9a68b85d2beb03a557304b27d18a3000634964"
+      },
+      "metrics_sha256": "5d55a3a4b24efdde15d936329aee6683c059aa2734e65509ec7341b27700d0bb",
+      "mode": "pvt",
+      "postprocessing_acceptance": null,
+      "memory_guard_exit_race_acceptance": null
+    },
+    {
+      "key": [
+        "TT",
+        0.9,
+        -40
+      ],
+      "study": "C:\\Users\\User\\Documents\\Codex\\2026-10-04\\project-1-design-of-a-3\\outputs\\layout_r6\\filled_variation_20261017\\pvt_tt_v090_tm40\\result\\study",
+      "input_sha256": "fe7cb3587b6168da9affa8c8da1565efdc14a85f55ab966d5b7fd6a9b0fe7999",
+      "source_files_sha256": {
+        "core.dist": "0ed28e4c914afcd6dd5042ede1ac49d32127cc7d6550f980fbedd3c2de132a97",
+        "core.dist.la_r6_full_fill_110822.pxi": "74f0eaec882b92b60fee158583554b450a480c2920a9f998cc58f78f2411854c",
+        "core.dist.pex": "f17c18f7862455f0e15b376abf9a68b85d2beb03a557304b27d18a3000634964"
+      },
+      "metrics_sha256": "21934a3b232d2f016c6edef6cea6fd9009d26c26b8c733d24132df7602b60f96",
+      "mode": "pvt",
+      "postprocessing_acceptance": null,
+      "memory_guard_exit_race_acceptance": null
+    },
+    {
+      "key": [
+        "TT",
+        0.9,
+        27
+      ],
+      "study": "C:\\Users\\User\\Documents\\Codex\\2026-10-04\\project-1-design-of-a-3\\outputs\\layout_r6\\full_top_v2_filled_ac_noise\\study",
+      "input_sha256": "3a17195c64fabc3a623946bf5035bc25186737e99bbd31bd9526391d43d98b48",
+      "source_files_sha256": {
+        "core.dist": "0ed28e4c914afcd6dd5042ede1ac49d32127cc7d6550f980fbedd3c2de132a97",
+        "core.dist.la_r6_full_fill_110822.pxi": "74f0eaec882b92b60fee158583554b450a480c2920a9f998cc58f78f2411854c",
+        "core.dist.pex": "f17c18f7862455f0e15b376abf9a68b85d2beb03a557304b27d18a3000634964"
+      },
+      "metrics_sha256": "3cab3398a7e61b25558a2f6363fa2ff80fd3f2c7e267f6ff051f6e82cffb751e",
+      "mode": "nominal",
+      "postprocessing_acceptance": {
+        "mode": "explicit_postprocess_only_recovery",
+        "recovery_receipt": {
+          "path": "C:\\Users\\User\\Documents\\Codex\\2026-10-04\\project-1-design-of-a-3\\outputs\\layout_r6\\full_top_v2_filled_ac_noise\\postprocess_recovery_receipt.json",
+          "sha256": "31be6d5b0c0f46ddbef6ad4b34121b884fa7b505fe6cdbd3c31905dae7266979"
+        },
+        "original_worker_state": "worker_failed",
+        "original_worker_exit_code": 1,
+        "original_worker_final_sha256": "1d9e4d42612f31ba16ae9236bdd73b80804b0d3de34badd1ab380140bddba244",
+        "native_relaunched": false,
+        "native_provenance_sha256": "991f444f1f6e9013416f51d76a13a8d909ba1569f218d83912cd6c46a716696e",
+        "recovered_metrics_sha256": "3cab3398a7e61b25558a2f6363fa2ff80fd3f2c7e267f6ff051f6e82cffb751e"
+      },
+      "memory_guard_exit_race_acceptance": null
+    },
+    {
+      "key": [
+        "TT",
+        0.9,
+        85
+      ],
+      "study": "C:\\Users\\User\\Documents\\Codex\\2026-10-04\\project-1-design-of-a-3\\outputs\\layout_r6\\filled_variation_20261017\\pvt_tt_v090_t85\\result\\study",
+      "input_sha256": "7b6123f4f0ca2d82e7782a93802ce56466873331a4acea9f896f97d6b05e8069",
+      "source_files_sha256": {
+        "core.dist": "0ed28e4c914afcd6dd5042ede1ac49d32127cc7d6550f980fbedd3c2de132a97",
+        "core.dist.la_r6_full_fill_110822.pxi": "74f0eaec882b92b60fee158583554b450a480c2920a9f998cc58f78f2411854c",
+        "core.dist.pex": "f17c18f7862455f0e15b376abf9a68b85d2beb03a557304b27d18a3000634964"
+      },
+      "metrics_sha256": "f6438a68442e2a4f6a09bc6d3072411163bf09970bcf6f39c39abc20a5894c00",
+      "mode": "pvt",
+      "postprocessing_acceptance": null,
+      "memory_guard_exit_race_acceptance": {
+        "mode": "explicit_completed_native_exit_race_audit",
+        "receipt": "C:\\Users\\User\\Documents\\Codex\\2026-10-04\\project-1-design-of-a-3\\outputs\\layout_r6\\filled_variation_20261017\\pvt_tt_v090_t85\\result\\memory_guard_exit_race_audit.json",
+        "receipt_sha256": "ee39a30110ac5b3bc33e1dfde38313380faea3b0d5b7e6a1c1728977f29e3331",
+        "native_relaunched": false,
+        "original_guard_failure_preserved": true,
+        "event_to_native_completion_seconds": 0.001068
+      }
+    }
+  ],
+  "pending_conditions": [
+    [
+      "TT",
+      0.99,
+      -40
+    ],
+    [
+      "TT",
+      0.99,
+      27
+    ],
+    [
+      "TT",
+      0.99,
+      85
+    ],
+    [
+      "SS",
+      0.81,
+      -40
+    ],
+    [
+      "SS",
+      0.81,
+      27
+    ],
+    [
+      "SS",
+      0.9,
+      -40
+    ],
+    [
+      "SS",
+      0.9,
+      27
+    ],
+    [
+      "SS",
+      0.9,
+      85
+    ],
+    [
+      "SS",
+      0.99,
+      -40
+    ],
+    [
+      "SS",
+      0.99,
+      27
+    ],
+    [
+      "SS",
+      0.99,
+      85
+    ],
+    [
+      "FF",
+      0.81,
+      -40
+    ],
+    [
+      "FF",
+      0.81,
+      27
+    ],
+    [
+      "FF",
+      0.9,
+      -40
+    ],
+    [
+      "FF",
+      0.9,
+      27
+    ],
+    [
+      "FF",
+      0.9,
+      85
+    ],
+    [
+      "FF",
+      0.99,
+      -40
+    ],
+    [
+      "FF",
+      0.99,
+      27
+    ],
+    [
+      "FF",
+      0.99,
+      85
+    ]
+  ],
+  "max_concurrent_native_jobs": 1,
+  "native_timeout_seconds": 600,
+  "no_automatic_retries": true,
+  "native_calls_during_planning": 0
+}

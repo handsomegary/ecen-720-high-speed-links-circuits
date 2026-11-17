@@ -1,0 +1,26 @@
+// Actual filled fulltop with native REDUCED effective floating capacitance approximation; no ALL-fidelity qualification.
+simulator lang=spectre
+global 0 VSS
+include "@LA5_PROJECT_ROOT@/scripts/la5_foundry_corners.scs" section=ff
+simulator lang=spice
+.include "core.dist"
+simulator lang=spectre
+VG (VSS 0) vsource dc=0
+VDD (vdd 0) vsource dc=0.90000000000000002
+VCM (vcm 0) vsource dc=.472122668
+VIN (stim 0) vsource dc=0 mag=1
+EP (drivep vcm stim 0) vcvs gain=.5
+EN (driven vcm stim 0) vcvs gain=-.5
+RSP (drivep srcp) resistor r=25
+RSN (driven srcn) resistor r=25
+CINP (srcp inp) capacitor c=200p
+CINN (srcn inn) capacitor c=200p
+XDUT (vdd VSS inp outp inn outn) la_r6_full_fill_110822
+CLOADP (outp 0) capacitor c=20f
+CLOADN (outn 0) capacitor c=20f
+opts options temp=27 reltol=1e-5 vabstol=1e-8 iabstol=1e-12 gmin=1e-15 rabsshort=0 preserve_inst=all savefilter=none
+saveOpt options save=selected currents=selected
+save outp outn inp inn srcp srcn stim vcm vdd VDD:p
+dcOp dc
+ac ac start=1k stop=200G dec=80
+noise (outp outn) noise start=1k stop=20G dec=80 iprobe=VIN save=lvlpub nestlvl=0

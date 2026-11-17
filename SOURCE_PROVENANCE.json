@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "la": {
+      "archive_sha256": "51e5bf616638da310cf813c8eab956eaec1d76b7966559aa80803d116553e273",
+      "cases": {
+        "nominal": {
+          "original_deck_sha256": "11bd040d5e39d26b1102a5434d0ca8a6da80648441b84bca4b70d932fa91c59f",
+          "published_template_sha256": "dc50e829e4887e7ed5f2f33360e251cfa386a4ad0ef4c5624340abeb285c0844",
+          "path": "netlists/nominal.scs"
+        }
+      }
+    }
+  },
+  "notes": "Deck templates differ from verified archived decks only at the PDK root marker. Digests refer to raw bytes."
+}

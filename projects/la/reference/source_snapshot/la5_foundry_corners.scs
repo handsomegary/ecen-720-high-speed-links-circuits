@@ -1,0 +1,27 @@
+simulator lang=spectre
+library la5cornerlib
+section ss
+include "/path/to/pdk_28nm/models/spectre/pdk_model_shrink_embedded.scs" section=ssmacro_mos_moscap
+include "/path/to/pdk_28nm/models/spectre/pdk_model_shrink_embedded.scs" section=ss_res_bip_dio_disres
+include "/path/to/pdk_28nm/models/spectre/pdk_model_shrink_embedded.scs" section=ss_mom
+include "/path/to/pdk_28nm/models/spectre/pdk_model_shrink_embedded.scs" section=ss_r_metal
+endsection ss
+section top_totalmc
+include "/path/to/pdk_28nm/models/spectre/pdk_model_shrink_embedded.scs" section=globalmc_localmc_mos_moscap
+include "/path/to/pdk_28nm/models/spectre/pdk_model_shrink_embedded.scs" section=globalmc_localmc_res_bip_dio_disres
+include "/path/to/pdk_28nm/models/spectre/pdk_model_shrink_embedded.scs" section=globalmc_localmc_mom
+include "/path/to/pdk_28nm/models/spectre/pdk_model_shrink_embedded.scs" section=tt_r_metal
+endsection top_totalmc
+section top_localmc
+include "/path/to/pdk_28nm/models/spectre/pdk_model_shrink_embedded.scs" section=localmconly_mos_moscap
+include "/path/to/pdk_28nm/models/spectre/pdk_model_shrink_embedded.scs" section=localmconly_res_bip_dio_disres
+include "/path/to/pdk_28nm/models/spectre/pdk_model_shrink_embedded.scs" section=localmconly_mom
+include "/path/to/pdk_28nm/models/spectre/pdk_model_shrink_embedded.scs" section=tt_r_metal
+endsection top_localmc
+section ff
+include "/path/to/pdk_28nm/models/spectre/pdk_model_shrink_embedded.scs" section=ffmacro_mos_moscap
+include "/path/to/pdk_28nm/models/spectre/pdk_model_shrink_embedded.scs" section=ff_res_bip_dio_disres
+include "/path/to/pdk_28nm/models/spectre/pdk_model_shrink_embedded.scs" section=ff_mom
+include "/path/to/pdk_28nm/models/spectre/pdk_model_shrink_embedded.scs" section=ff_r_metal
+endsection ff
+endlibrary la5cornerlib

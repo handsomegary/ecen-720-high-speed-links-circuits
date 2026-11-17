@@ -1,0 +1,31 @@
+; Read the results of a previously completed standalone Spectre LA AC run.
+let((raw available waveP waveM xvec n)
+  raw = getShellEnvVar("PROJECT_RAW_DIR")
+  unless(raw
+    printf("ERROR: PROJECT_RAW_DIR is not set\n")
+    exit(1)
+  )
+  openResults(raw)
+  available = results()
+  printf("Available results: %L\n" available)
+  unless(member('ac available)
+    printf("ERROR: AC result is not available\n")
+    exit(1)
+  )
+  selectResult('ac)
+  waveP = getData("outp")
+  waveM = getData("outn")
+  unless(waveP && waveM
+    printf("ERROR: Missing outp/outn; signals: %L\n" outputs())
+    exit(1)
+  )
+  xvec = drGetWaveformXVec(waveP)
+  n = drVectorLength(xvec)
+  unless(n > 1
+    printf("ERROR: AC waveform has too few points\n")
+    exit(1)
+  )
+  printf("LA_OCEAN_READ_PASS: %d points, first frequency = %g Hz, last = %g Hz\n"
+         n drGetElem(xvec 0) drGetElem(xvec n-1))
+)
+exit(0)
